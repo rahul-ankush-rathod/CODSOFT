@@ -167,7 +167,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 8vh;
 }
 
 .section__pic-container {
@@ -264,7 +264,7 @@ section {
 
 /* ABOUT SECTION */
 
-.section__pic-container1{
+.section__pic-container1 {
   height: 250px;
   width: 250px;
   margin: auto 0;
@@ -272,37 +272,46 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
-  
+
 
 
 }
-.section__pic-container1 img{
+
+.section__pic-container1 img {
   max-width: 100%;
   height: auto;
   border-radius: 25%;
 }
-.marg{
+
+.marg {
   margin-top: 30px;
 }
-.adj{
+
+.adj {
   margin-top: 50px;
   margin-bottom: 35px;
 }
-.btn10{
+
+.btn10 {
   padding-top: 82px;
 }
-.btn11{
+
+.btn11 {
   padding-top: 90px;
 }
-.btn12{
+
+.btn12 {
   padding-top: 13px;
 }
-#pp3{
+
+#pp3 {
   font-size: large;
 }
-.fonti{
+
+.fonti {
   font-size: small;
 }
+
 #about {
   position: relative;
 }
@@ -331,7 +340,7 @@ section {
   position: absolute;
   right: -3.5rem;
   bottom: -1.5rem;
-  left:  3.5px;
+  left: 3.5px;
 }
 
 .details-container {
@@ -471,9 +480,92 @@ footer {
 footer p {
   text-align: center;
 }
+
 @media (max-width: 768px) {
-  nav {
-    flex-direction: row;
-    justify-content: space-between;
+  .logo {
+
+    display: none;
+
   }
+
+  .nav-links {
+    align-content: center;
+    padding-left: 340px;
+  }
+
+  
+
+  .section__pic-container1 {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    
+  }
+
+  .section__text {
+    margin-left: 700px;
+    
+  }
+  
+}
+/* Profile Section */
+
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+  #profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: 80vh;
+    flex-direction: column; /* Stack items vertically on mobile */
+  }
+  #profile {
+    gap: 2rem; /* Reduce gap between items */
+    height: auto; /* Allow the section to grow as needed */
+    padding: 2rem 0; /* Add padding for better spacing */
+  }
+  .section__text{
+    margin-top: -320%;
+  }
+
+  .section__pic-container1 {
+    height: 350px;
+    width: 280px; /* Reduce size for smaller screens */
+  }
+
+  .section__text {
+    text-align: center; /* Center-align text */
+  }
+
+  .section__text__p1,
+  .section__text__p2,
+  .title {
+    font-size: 1.5rem; /* Adjust font size for mobile */
+  }
+  .getkntext{
+    display: ruby-text;
+  }
+  .details-container{
+    padding: -50%;
+    margin-top: 85%;
+    border: none;
+    
+  }
+  .about-containers{
+    margin-left: 60px;
+    padding: -150px;
+    margin-top: 200px;
+ 
+  }
+  .form{
+    margin-top: 50%;  }
+    p{
+      font-size: x-large;
+    }
 }
